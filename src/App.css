@@ -1,22 +1,165 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+  background:url('https://i.imgur.com/KAImjoO.png');
+  background-repeat:round;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
+}
+
+.container {
+  border:1px solid white;
+  width:80%;
+  height:80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:white;
+  opacity:0.75;
+  position:relative;
 }
 
-.App-link {
-  color: #09d3ac;
+.title{
+  display: flex;
+  align-items: center;
+  height: 15%;
+  position: absolute;
+  top: 0%;
+  text-transform: uppercase;
+  font-family: 'Sitka Small','sans-serif';
+  font-size:xx-large
 }
+.filterContainer{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height:15%;
+  top: 15%;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.filterText{
+  display:flex;
+  align-items:baseline;
+  justify-content: space-between;
+}
+
+.filterSelect{
+  display:flex;
+  align-items:baseline;
+  justify-content: space-between;
+}
+
+.filterSelect p{
+  margin-right:2px;
+}
+
+.filterText p{
+  margin-right:2px
+}
+
+.listContainer{
+  display:flex;
+  background-color:white;
+  height:70%;
+  width:100%;
+  position:absolute;
+  bottom:0%;
+  opacity:1
+}
+
+.sheetContainer{
+  height:100%;
+  width:90%;
+  overflow:auto
+}
+
+.upperBar{
+  display:flex;
+  background-color:#D9D9D9;
+  width:100%;
+  height:10%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.upperBar .field{
+  display:flex;
+  width:calc(100%/4);
+  border-left: 1px solid #707070;
+  border-right:1px solid #707070;
+  justify-content:center;
+}
+
+
+
+.contactList{
+  display:flex;
+  background-color:white;
+  width: 100%;
+  height:auto
+}
+
+.contactList .field{
+  width:calc(100%/4);
+  border:1px solid #707070;
+  display:flex
+}
+
+.contactList .tools-field div{
+  display:flex;
+  background: black;
+  color: white;
+  width:33%;
+  font-size:xx-small;
+  align-items:center;
+  cursor:pointer;
+  justify-content: center;
+}
+
+.contactList .tools-field div:hover{
+  transform:translateY(-0.5%);
+  background-color:#6E6E6C;
+}
+
+.contactList .tools-field div img{
+  width:15%;
+  margin-left:0.5rem
+}
+
+
+.toolsContainer{
+  background-color:black;
+  height:100%;
+  width:10%
+}
+
+.toolsContainer .tool{
+  display:flex;
+  width:100%;
+  height:100%;
+  border:1px solid white;
+  box-sizing: border-box;
+  color:white;
+  flex-direction:column;
+  align-items: center;
+  padding-top:3px;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition:all 1s
+}
+
+.toolsContainer .tool:hover{
+  transform:translateY(-0.5%);
+  background-color:#6E6E6C;
+}
+
+.toolsContainer .tool img{
+  width:20%
+}
+
